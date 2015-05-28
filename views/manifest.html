@@ -1,0 +1,23 @@
+CACHE MANIFEST
+
+CACHE:
+/
+/scripts/cookies.js
+{{~it.files :file:index}}
+{{=file}}
+{{~}}
+
+# Offline Centers
+{{~it.cachedPages :page:index}}
+/center/{{=page}}
+{{~}}
+
+FALLBACK:
+/setup /not-offline
+/cache /not-offline
+{{~it.notCachedPages :page:index}}
+/center/{{=page}} /not-offline
+{{~}}
+
+NETWORK:
+*

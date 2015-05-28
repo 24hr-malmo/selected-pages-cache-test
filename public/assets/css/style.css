@@ -1,0 +1,46 @@
+body {
+    background-color: rgba(200, 100, 10, .2);
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgba(200, 100, 10, 1);
+}
+
+a {
+    color: rgba(200, 130, 10, 1);
+}
+
+#debug {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    top: 0;
+}
+
+.mb2 {
+    margin-bottom: 2rem;
+}
+
+.ma2 {
+    margin: 2rem;
+}
+
+.image-as-background {
+    background-position: center center;
+    background-size: cover;
+}
+
+.size-1 {
+    width: 300px;
+    height: 300px;
+}
+
+.round {
+    border-radius: 1000rem;
+}
+
+.cached {
+    color: green
+}

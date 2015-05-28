@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{{? it.manifest }}
+    <html lang="en" manifest="/cache.manifest">
+{{??}}
+    <html>
+{{?}}
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cache manifest test</title>
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <script src="/scripts/cookies.js" type="text/javascript"></script>
+    </head>
+    <body class="ma2">
+        <h1>Cache Test</h1>
+        <div class="mb2">
+            <a href="/">Start</a> | <a href="/setup">Setup</a>
+        </div>
+        <div>
+            {{=it.body}}
+        </div>
+        <div id="debug">Debug</div>
+    </body>
+
+</html>

@@ -1,0 +1,6 @@
+<h2>{{=it.item.name}}</h2>
+<div>
+    {{~it.item.images :image:index}}
+    <div class="size-1 round image-as-background" style="background-image: url('{{=image}}');"></div>
+    {{~}}
+</div>
